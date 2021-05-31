@@ -1,0 +1,132 @@
+nbminer -a ergo  --proxy 127.0.0.1:7890 -o stratum+tcp://ergo-eu.leafpool.com:1111 -u 9g8BJAMj5npE4mFJCWBnNoX3WXPk5oMcAsdFk1Mbuk9nUa2UboR.s1063c5 
+nbminer -a ethash --proxy 127.0.0.1:7890 -o stratum+tcp://eth.zetpool.org:8005 -u 0x0c4fee1f1e8a1439e3659ef7e068e6326ece304b.3060ls
+
+nbminer -a ergo -o2 stratum+tcp://pool.ergo.fairhash.org:1333 -u2 9g8BJAMj5npE4mFJCWBnNoX3WXPk5oMcAsdFk1Mbuk9nUa2UboR.s1063c6  -o stratum+tcp://ergo.rkdn.app:1180 -u 9g8BJAMj5npE4mFJCWBnNoX3WXPk5oMcAsdFk1Mbuk9nUa2UboR.s1063c6 -o1 stratum+tcp://cn.erg.k1pool.com:3746 -u1 9g8BJAMj5npE4mFJCWBnNoX3WXPk5oMcAsdFk1Mbuk9nUa2UboR.s1063c6
+
+
+https://sub.v2club.top/api/v1/client/subscribe?token=f6642069e6c4f1a634d1ab00400c071e
+
+i6700
+214 337 477
+
+
+r7
+319 269 621
+54r23z
+
+3070
+358 914 055
+3ssv01
+
+6600h
+264 320 531
+kgob2n
+
+619 577 011
+m4ux70
+
+j6600XT
+176 921 845
+6526g0
+294 655 823
+o53a96
+
+w
+952 141 238
+68p8m2
+
+c1
+244 545 191
+v0csk9
+
+c2
+741 186 211
+64r3jk
+284720963
+e11229
+
+c4
+318194298
+aj2659
+
+c5
+455 230 107
+b7kbs9
+
+c6 画面卡冻
+897 396 770
+98b6ey
+
+c7
+240926708
+6kfg09
+
+c8（l
+520 849 517
+336i1s
+
+y
+248 096 489
+ypve0c
+
+6700a
+168 692 872
+tx7o20
+
+6700b
+649 888 120
+m606ny
+
+5500d
+922639917
+1st6re
+
+5500e
+751 270 484
+96n0jo
+
+5500f
+947 106 759
+q318ur
+
+g
+853654142
+q318ur
+
+k
+458895506
+ypve0c
+195 529 148
+6kfg09
+
+r
+825 640 538
+68p8m2
+
+3060
+954 526 568
+64r3jk
+
+3060ti x
+462 525 446
+frcy29
+
+3060l
+169 938 271
+a7n9n8
+
+nbminer -a ethash  -o stratum+tcp://eth.pool-moscow.ru:9008 -u 0x0c4fee1f1e8a1439e3659ef7e068e6326ece304b.ax3060ti  -o1 stratum+tcp://ethash.poolbinance.com:1800 -u1 kbw.ax3060ti -o2 stratum+tcp://eth-pps.zetpool.org:8005 -u2 0x0c4fee1f1e8a1439e3659ef7e068e6326ece304b.ax3060ti
+
+719 521 769
+947swh
+468 136 888
+265238100
+690 227 595
+
+nbminer -a ethash -o1 stratum+tcp://ethash.poolbinance.com:1800 -u1 kbw.ax3060ti   -o stratum+tcp://eu1.eth.gram.gg:5555 -u 0xe863a4Add11677539BB348f7521BE0E06C1D7cAc.ax3060ti  -o2 stratum+tcp://eth-pps.zetpool.org:8005 -u2 0x0c4fee1f1e8a1439e3659ef7e068e6326ece304b.ax3060ti  --pl 130 -mclock 500,800,500,1100 
+
+# -cclock @1000
+#eth-pps.zetpool.org:8005
+#eth.2miners.com:2020
+
+Gram Secret Phrase: seven invite tourist galaxy hammer suggest renew direct input evil rain genre
