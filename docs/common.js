@@ -58,6 +58,8 @@ const works = [
                             Conduct special research on key technologies such as algorithms and databases to resolve corporate-level technical difficulties.</li>
                             <li>Lead the research and practice of software engineering methods across product lines/product lines, 
                             and propose innovative engineering methods.
+                            </li>
+                            <li>Responsible for Clean Code / Coding Standards planing and implementation.
                             </li>`,
   },
   {
@@ -108,7 +110,7 @@ const works = [
     cls: 'ACCU',
     title: 'Back-End Developer',
     time: '2015/7 ~ 2017/12',
-    affiliated: 'http://img202.yun300.cn/img/5523.png?tenantId=244128',
+    affiliated: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.3JfCz-BhoNINfTobcRg2vgAAAA?w=150&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7',
     description: `
                             ACCU provides one-stop quality problem solutions for the entire supply chain
                             from raw materials to finished product delivery in the electronics,
