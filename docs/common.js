@@ -66,7 +66,8 @@ const works = [
     cls: 'Bybit',
     title: 'Back-End Developer',
     time: '2022/6 ~ 2023/3',
-    affiliated: 'http://jfz-erp2.oss-cn-hangzhou.aliyuncs.com/images/dc_upload/a1XE4Zom1pbNOZ4LZ1eKVodAbagpmI1mmMAWhu3K.png',
+    affiliated:
+      'http://jfz-erp2.oss-cn-hangzhou.aliyuncs.com/images/dc_upload/a1XE4Zom1pbNOZ4LZ1eKVodAbagpmI1mmMAWhu3K.png',
     description: `
                             <li>Responsible for front-end and back-end system design and development</li>
                             <li>
@@ -110,7 +111,8 @@ const works = [
     cls: 'ACCU',
     title: 'Back-End Developer',
     time: '2015/7 ~ 2017/12',
-    affiliated: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.3JfCz-BhoNINfTobcRg2vgAAAA?w=150&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7',
+    affiliated:
+      'https://tse2-mm.cn.bing.net/th/id/OIP-C.3JfCz-BhoNINfTobcRg2vgAAAA?w=150&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7',
     description: `
                             ACCU provides one-stop quality problem solutions for the entire supply chain
                             from raw materials to finished product delivery in the electronics,
@@ -154,29 +156,30 @@ $(document).ready(() => {
     $('iframe.' + ifr).attr('height', ifrHeights[i])
   })
   projects.forEach((j) => {
-    $('tr.project.' + j.cls).html(`
+    $('tr.project.' + j.cls).html(
+      `
 <td class="p15">
   <table cellspacing="0" cellpadding="0" border="0">
     <tbody>
       <tr>
         <td class="phd tb1" colspan="3"><strong>` +
-      j.title +
-      `</strong></td>
+        j.title +
+        `</strong></td>
         <td valign="top" class="time">` +
-      j.time +
-      `</td></tr>` +
-      (j.affiliated
-        ? `<tr>
+        j.time +
+        `</td></tr>` +
+        (j.affiliated
+          ? `<tr>
           <td valign="top" class="tb keys"> Affiliated:</td>
           <td valign="top" colspan="3" class="txt1">` +
-        j.affiliated +
-        `</td></tr>`
-        : '') +
-      `<tr>
+            j.affiliated +
+            `</td></tr>`
+          : '') +
+        `<tr>
         <td valign="top" class="tb1 keys">Description:</td>
         <td valign="top" colspan="3" class="txt1">` +
-      j.description +
-      `</td>
+        j.description +
+        `</td>
       </tr>
     </tbody>
   </table>
@@ -184,7 +187,8 @@ $(document).ready(() => {
     )
   })
   works.forEach((j) => {
-    $('tr.work.' + j.cls).html(`
+    $('tr.work.' + j.cls).html(
+      `
         <tr>
           <td class="p15 pd_20">
             <table cellspacing="0" cellpadding="0" border="0">
@@ -193,17 +197,25 @@ $(document).ready(() => {
                   <td width="52" height="52" rowspan="2" class="companyLogo">
                     <p>
                       <img
-                        src="` + j.affiliated + `"
+                        src="` +
+        j.affiliated +
+        `"
                         alt="" width="48" height="48" /><i></i>
                     </p>
                   </td>
 
-                  <td class="phd tb1 p_12"><strong>` + j.cls + `</strong><span class="gray">&nbsp;</span></td>
-                  <td valign="top" class="time">` + j.time + `</td>
+                  <td class="phd tb1 p_12"><strong>` +
+        j.cls +
+        `</strong><span class="gray">&nbsp;</span></td>
+                  <td valign="top" class="time">` +
+        j.time +
+        `</td>
                 </tr>
                 <tr>
                   <td valign="top" class="tb1 p_12" colspan="3">
-                    <span>` + j.title + `</span>
+                    <span>` +
+        j.title +
+        `</span>
                   </td>
                 </tr>
                 <tr>
@@ -216,7 +228,9 @@ $(document).ready(() => {
                         <tr>
                           <td valign="top" class="keys">Description:</td>
                           <td valign="top" class="txt1">
-                          ` + j.description + `
+                          ` +
+        j.description +
+        `
                           </td>
                         </tr>
                       </tbody>
@@ -226,6 +240,7 @@ $(document).ready(() => {
               </tbody>
             </table>
           </td>
-        </tr>`)
+        </tr>`
+    )
   })
 })
