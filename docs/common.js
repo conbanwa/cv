@@ -138,6 +138,15 @@ const works = [
                               maintaining national language packages.
                             </li>`,
   },
+  {
+    cls: 'Rolls-Royce',
+    title: 'Intern Engineer',
+    time: '2014/9 ~ 2014/10',
+    affiliated:
+      'https://www.bing.com/th?id=OSK.by68J9786kXt3Rf2wwSHYuyJB8Aa5EajCKHT-3O4lQk&w=102&h=102&c=7&o=6&pid=SANGAM',
+    description: `
+                            Responsible for verifying product measurement data on the production line to provide assurance for product quality.`,
+  },
 ]
 $(document).ready(() => {
   let ifrs = ['personal', 'open', 'education']
