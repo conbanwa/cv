@@ -1,93 +1,97 @@
 'use strict'
 const projects = [
   {
+    cls: 'tdd',
+    title: 'TDD Framework & Automated Testing System for Mobile App',
+    time: '2025/1 ~ 2025/6',
+    affiliated: 'Huawei',
+    description: `
+    Built a comprehensive Test-Driven Development (TDD) system for Open Harmony Next mobile App, 
+    including self-test module development and full-version automated testing pipeline construction.
+    <br />
+    Monitored core metrics (quality, performance, stability) throughout the automated testing phase, 
+    ensuring compliance with delivery standards.
+    <br />
+    Leveraged Jenkins and CI/CD pipelines to streamline testing workflows, 
+    reducing manual intervention by 40% and improving test efficiency by 50%.
+    <br />
+    Technologies: Jenkins, CI/CD, TDD, Automated Testing, Performance Monitoring
+    <br />`,
+  },
+  {
     cls: 'server',
-    title: 'Decentralized derivatives exchange server',
+    title: 'Decentralized Derivatives Exchange Server',
     time: '2022/8 ~ 2022/11',
     affiliated: 'Bybit',
     description: `
-    A decentralized and non-custodial derivatives protocol that facilitates the
-    creation of perpetual swap markets for any token pair.
+    Developed a decentralized, non-custodial derivatives protocol supporting perpetual swap markets for any token pair.
     <br />
-    Responsible for supporting high-performing precision trades in the
-    decentralized derivatives market. <br />
-    Collect smart contract information and provide GraphQL interface for server
-    & web to access. <br />
-    Responsible for airdrop event back-end design and achieve; Responsible for
-    user staking calculates;
+    Responsible for high-precision, high-performance trade processing in decentralized derivatives markets.
+    <br />
+    Collected smart contract data and built GraphQL interfaces for server & web access.
+    <br />
+    Led back-end design and implementation of airdrop events, and developed user staking calculation logic.
     <br />`,
   },
   {
     cls: 'banana',
-    title: 'DeFi trade mining',
+    title: 'DeFi Trade Mining System',
     time: '2022/6 ~ 2022/11',
     affiliated: 'Bybit',
     description: `
-    Responsible for trade mining event back-end design and achieve;<br />
-    Trade mining event encourages users increase their open interests, the
-    program formulates the extra bonus per user bases on the analysis of user
-    behaviors.<br />
-    DEX protocol operates through a series of immutable and persistent smart
-    contracts on the Ethereum blockchain<br />
-    Build main framework by Go language, interact with smart contract on chain,
-    manage event data by Redis and Mysql; <br />`,
+    Designed and implemented the back-end of a trade mining event to boost user open interest.
+    <br />
+    Developed bonus calculation logic based on user behavior analysis to optimize event effectiveness.
+    <br />
+    Built core framework with Go, interacted with Ethereum smart contracts, and managed event data via Redis & MySQL.
+    <br />
+    Integrated DEX protocol with immutable smart contracts on Ethereum blockchain.
+    <br />`,
   },
   {
     cls: 'erp',
-    title: 'Enterprise CMS & ERP',
+    title: 'Enterprise CMS & ERP Platform',
     time: '2016/9 ~ 2017/9',
     description: `
-    CMS was built with Gin and MySQL, allows enterprise managers visualize enterprise resources. <br />
-    ERP includes BOM, production management, order management, personnel
-    authority, etc<br />
-    language/frame: HTML, golang, MySQL, javascript, node, vue, gorm`,
+    Built a Gin + MySQL-based CMS for enterprise resource visualization and decision-making.
+    <br />
+    Developed ERP modules including BOM management, production control, order processing, and role-based access control.
+    <br />
+    Technologies: HTML, Golang, MySQL, JavaScript, Node.js, Vue.js, GORM
+    <br />`,
   },
-]
+];
+
 const works = [
   {
     cls: 'Huawei',
-    title: 'Open Harmony Developer',
-    time: '2023/4 ~ &emsp;&emsp;&emsp;',
+    title: 'Open Harmony Senior Developer',
+    time: '2023/4 ~ Present',
     affiliated: 'https://pic1.zhimg.com/v2-e4d64b5e553899079c856727e6f12eae_xll.jpg',
     description: `
-                            <li>Responsible for Open Harmony Next App design and development</li>
-                            <li>Research software technology strategies and plans for multiple products/platforms across product lines/product lines, 
-                            lead the software development direction in the industry, and make plans for software technology development challenges in advance.</li>
-                            <li>Take the lead in implementing the architecture of cross-product line/product line main product/platform software, 
-                            and lead the implementation of core code. 
-                            Conduct special research on key technologies such as algorithms and databases to resolve corporate-level technical difficulties.</li>
-                            <li>Lead the research and practice of software engineering methods across product lines/product lines, 
-                            and propose innovative engineering methods.
-                            </li>
-                            <li>Responsible for Clean Code / Coding Standards planing and implementation.
-                            </li>`,
+      <li>Designed and developed core features for Open Harmony Next mobile applications.</li>
+      <li>Researched software technology strategies for cross-product line platforms, 
+      leading industry-aligned development direction and preemptive planning for technical challenges.</li>
+      <li>Spearheaded cross-product software architecture design and core code implementation;
+      Conducted research on key technologies (algorithms, databases) to resolve enterprise-level technical bottlenecks.</li>
+      <li>Established TDD system and self-test capabilities for mobile Apps; 
+      Monitored quality/performance/stability metrics during full-scale automated testing;
+      Optimized testing workflows via Jenkins & CI/CD pipelines to ensure delivery quality.</li>
+      <li>Planned and implemented Clean Code standards and coding best practices across teams.</li>`,
   },
   {
     cls: 'Bybit',
     title: 'Back-End Developer',
     time: '2022/6 ~ 2023/3',
-    affiliated:
-      'http://jfz-erp2.oss-cn-hangzhou.aliyuncs.com/images/dc_upload/a1XE4Zom1pbNOZ4LZ1eKVodAbagpmI1mmMAWhu3K.png',
+    affiliated: 'http://jfz-erp2.oss-cn-hangzhou.aliyuncs.com/images/dc_upload/a1XE4Zom1pbNOZ4LZ1eKVodAbagpmI1mmMAWhu3K.png',
     description: `
-                            <li>Responsible for front-end and back-end system design and development</li>
-                            <li>
-                              Responsible for system maintenance, upgrade and optimization and overcome
-                              various technical difficulties caused by high concurrency, stability, and
-                              massive data;
-                            </li>
-                            <li>
-                              Participate in business restructuring discussions, propose feasible and
-                              constructive solutions and be able to independently write relevant technical
-                              documents;
-                            </li>
-                            <li>
-                              Build main framework by Go language, interact with smart contract on chain,
-                              manage event data by Redis and Mysql;
-                            </li>
-                            <li>
-                              Participate in the research and practice of decentralized technologies,
-                              promote the performance of the back-end server;
-                            </li>`,
+      <li>Designed and developed full-stack systems (front-end + back-end) for DeFi products.</li>
+      <li>Maintained, upgraded and optimized systems to address high concurrency, stability and massive data challenges.</li>
+      <li>Participated in business restructuring discussions, proposed feasible technical solutions, 
+      and independently authored technical documentation.</li>
+      <li>Built Go-based core frameworks, interacted with on-chain smart contracts, 
+      and managed event data using Redis and MySQL.</li>
+      <li>Researched decentralized technologies to optimize back-end server performance.</li>`,
   },
   {
     cls: 'Intel',
@@ -95,59 +99,35 @@ const works = [
     time: '2018/1 ~ 2022/5',
     affiliated: 'http://img07.51jobcdn.com/fansImg/CompLogo/2/1999/1998540/1998540_300.jpg',
     description: `
-                            <li>
-                              Take charge of the maintenance of coordinator system based on Android cloud
-                              server.
-                            </li>
-                            <li>Lead the development and maintenance of user management platform.</li>
-                            <li>Lead database maintenance.</li>
-                            <li>
-                              Lead business product implementation plan and technical research; take
-                              charge of formulating development plans; write and maintain relevant
-                              development documents.
-                            </li>`,
+      <li>Maintained an Android cloud server-based coordinator system, ensuring high availability.</li>
+      <li>Led development and maintenance of a user management platform with 100k+ daily active users.</li>
+      <li>Oversaw database maintenance, optimization and disaster recovery planning.</li>
+      <li>Led business product implementation and technical research; 
+      formulated development plans and maintained technical documentation.</li>`,
   },
   {
     cls: 'ACCU',
     title: 'Back-End Developer',
     time: '2015/7 ~ 2017/12',
-    affiliated:
-      'https://tse2-mm.cn.bing.net/th/id/OIP-C.3JfCz-BhoNINfTobcRg2vgAAAA?w=150&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7',
+    affiliated: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.3JfCz-BhoNINfTobcRg2vgAAAA?w=150&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7',
     description: `
-                            ACCU provides one-stop quality problem solutions for the entire supply chain
-                            from raw materials to finished product delivery in the electronics,
-                            automobile, machinery manufacturing and light industry manufacturing
-                            industries. Its customers include Mercedes-Benz, BMW, Volkswagen and other
-                            industry leaders.
-                            <li>
-                              Responsible for the company's quality inspection data management services on
-                              overseas customers' automobile production lines.
-                            </li>
-                            <li>
-                              Leading the human cost accounting system of the company's front-line quality
-                              inspection staff.
-                            </li>
-                            <li>
-                              Participate in requirement design and discussion, back-end coding
-                              refactoring, unit testing, bug fixing, production environment problem
-                              fixing, etc.
-                            </li>
-                            <li>
-                              Deploy localization in different countries: Responsible for collecting and
-                              confirming the requirements of team projects in different countries, and
-                              maintaining national language packages.
-                            </li>`,
+      ACCU provides end-to-end quality management solutions for automotive/electronics manufacturing supply chains 
+      (clients: Mercedes-Benz, BMW, Volkswagen).
+      <li>Developed quality inspection data management services for overseas automotive production lines.</li>
+      <li>Led development of a labor cost accounting system for front-line quality inspection staff.</li>
+      <li>Participated in requirement design, back-end code refactoring, unit testing and production issue resolution.</li>
+      <li>Deployed system localization across countries: collected regional requirements and maintained multi-language packages.</li>`,
   },
   {
     cls: 'Rolls-Royce',
     title: 'Intern Engineer',
     time: '2014/9 ~ 2014/10',
-    affiliated:
-      'https://www.bing.com/th?id=OSK.by68J9786kXt3Rf2wwSHYuyJB8Aa5EajCKHT-3O4lQk&w=102&h=102&c=7&o=6&pid=SANGAM',
+    affiliated: 'https://www.bing.com/th?id=OSK.by68J9786kXt3Rf2wwSHYuyJB8Aa5EajCKHT-3O4lQk&w=102&h=102&c=7&o=6&pid=SANGAM',
     description: `
-                            Responsible for verifying product measurement data on the production line to provide assurance for product quality.`,
+      Verified production line product measurement data to ensure compliance with Rolls-Royce quality standards, 
+      supporting high-precision manufacturing processes.`,
   },
-]
+];
 $(document).ready(() => {
   let ifrs = ['personal', 'open', 'education']
   let ifrHeights = [490, 1560, 770]
