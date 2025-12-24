@@ -3,7 +3,7 @@ const projects = [
   {
     cls: 'codecheck',
     title: 'Code Quality & Security Governance System',
-    time: '2021/1 ~ 2023/4',
+    time: '2024/1 ~ 2024/4',
     affiliated: 'Cross-project Initiative',
     description: `
     Background: Frequent iteration of multi-team maintained projects led to rising security risks (external input vulnerabilities, memory leaks) and inconsistent code quality, which degraded product performance and reliability by 30%.
@@ -22,9 +22,9 @@ const projects = [
     <br />`,
   },
   {
-    cls: 'server',
+    cls: 'tdd',
     title: 'TDD Framework & Automated Testing System for Mobile App',
-    time: '2023/1 ~ 2023/4',
+    time: '2025/1 ~ 2025/6',
     affiliated: 'Huawei',
     description: `
     Background: Open Harmony Next mobile App faced low test efficiency and unstable quality during rapid iteration, with 25% of bugs detected only in production environment.
@@ -112,7 +112,7 @@ const works = [
     time: '2023/4 ~ Present',
     affiliated: 'https://pic1.zhimg.com/v2-e4d64b5e553899079c856727e6f12eae_xll.jpg',
     description: `
-      <li>Designed and developed core features for Open Harmony Next mobile applications.</li>
+      Designed and developed core features for Open Harmony Next mobile applications.
       <li>Researched software technology strategies for cross-product line platforms, 
       leading industry-aligned development direction and preemptive planning for technical challenges.</li>
       <li>Spearheaded cross-product software architecture design and core code implementation;
@@ -128,7 +128,7 @@ const works = [
     time: '2022/6 ~ 2023/3',
     affiliated: 'http://jfz-erp2.oss-cn-hangzhou.aliyuncs.com/images/dc_upload/a1XE4Zom1pbNOZ4LZ1eKVodAbagpmI1mmMAWhu3K.png',
     description: `
-      <li>Designed and developed full-stack systems (front-end + back-end) for DeFi products.</li>
+      Designed and developed full-stack systems (front-end + back-end) for DeFi products.
       <li>Maintained, upgraded and optimized systems to address high concurrency, stability and massive data challenges.</li>
       <li>Participated in business restructuring discussions, proposed feasible technical solutions, 
       and independently authored technical documentation.</li>
@@ -142,7 +142,7 @@ const works = [
     time: '2018/1 ~ 2022/5',
     affiliated: 'http://img07.51jobcdn.com/fansImg/CompLogo/2/1999/1998540/1998540_300.jpg',
     description: `
-      <li>Maintained an Android cloud server-based coordinator system, ensuring high availability.</li>
+      Maintained an Android cloud server-based coordinator system, ensuring high availability.
       <li>Led development and maintenance of a user management platform with 100k+ daily active users.</li>
       <li>Oversaw database maintenance, optimization and disaster recovery planning.</li>
       <li>Led business product implementation and technical research; 
