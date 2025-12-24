@@ -150,7 +150,7 @@ const works = [
 ]
 $(document).ready(() => {
   let ifrs = ['personal', 'open', 'education']
-  let ifrHeights = [490, 1560, 730]
+  let ifrHeights = [490, 1560, 770]
   ifrs.forEach((ifr, i) => {
     $('iframe.' + ifr).attr({
       align: 'center',
