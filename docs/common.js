@@ -14,10 +14,10 @@ const projects = [
         'Designed and implemented regex-based global code scanning tools to validate external input, memory management, exception recovery, sensitive data handling and IO security across all codebases;',
         'Built project-specific quality interception systems for high-frequency maintenance projects, developed automated test scripts to replace manual self-testing covering 90% of core business scenarios;',
         'Optimized code management mechanisms: restricted access permissions and formulated coding standards/submission interception rules to enforce code quality at commit stage;',
-        'Established real-time monitoring of code submission quality to identify and block non-compliant code before merge. 通过增量扫描与差异化检测扫描每笔提交，溯源责任人。',
+        'Established real-time monitoring of code submission quality to identify and block non-compliant code before merge. Performed incremental and differential scans on each commit to trace the responsible author.',
       ],
       outcomes:
-        'Reduced security vulnerabilities by 75%, cut manual testing time by 60%, minimized performance degradation 相关代码 in maintenance by 90%, and improved code maintainability & reliability.',
+        'Reduced security vulnerabilities by 75%, cut manual testing time by 60%, minimized related code might cause performance degradation during maintenance by 90%, and improved code maintainability & reliability.',
     },
   },
   {
@@ -37,7 +37,7 @@ const projects = [
         'Optimized test case design to cover edge scenarios, reducing production bugs by targeting root causes in development phase.',
       ],
       outcomes:
-        'Reduced manual intervention by 90%, 全量测试频率从每周一次提升至每小时一次，缺陷密度减少65%，发布周期缩短一半。测试覆盖率达99%以上，为团队能更加放心大胆的进行代码重构。',
+        'Reduced manual intervention by 90%, increased full-test frequency from once a week to once an hour, reduced defect density by 65%, and shortened release cycle by half. Test coverage exceeded 99%, enabling the team to refactor code more confidently.',
     },
   },
   {
@@ -57,7 +57,7 @@ const projects = [
         'Led backend design and implementation of airdrop events, developed accurate user staking calculation logic with 0 calculation errors.',
       ],
       outcomes:
-        'Successfully launched perpetual swap markets, supported 20k+ daily active users, 交易撮合与查询延迟降低40%',
+        'Successfully launched perpetual swap markets, supported 20k+ daily active users, and reduced trade matching and query latency by 40%',
     },
   },
   {

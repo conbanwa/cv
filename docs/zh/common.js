@@ -1,4 +1,5 @@
 'use strict'
+// 项目经历与工作经历数据
 const projects = [
   {
     cls: 'codecheck',
@@ -16,9 +17,9 @@ const projects = [
     <br />
     3. 优化代码管理机制：通过权限管控、制定代码规范/提交拦截规则，在代码提交阶段强制保障质量；
     <br />
-    4. 建立代码提交质量实时监控机制，在代码合并前识别并拦截不合规代码。
+    4. 建立代码提交质量实时监控机制，在代码合并前识别并拦截不合规代码。通过增量扫描与差异化检测扫描每笔提交，溯源责任人。
     <br />
-    成果：安全漏洞检出率提升75%，手工自测时间减少60%，维护过程中性能损耗降低90%，代码可维护性与可靠性提升80%。
+    成果：安全漏洞检出率提升75%，手工自测时间减少60%，性能损耗相关代码减少90%，代码可维护性与可靠性大幅提升。
     <br />`,
   },
   {
@@ -39,7 +40,8 @@ const projects = [
     <br />
     4. 优化测试用例设计，覆盖边缘场景，从开发阶段定位根因减少生产bug。
     <br />
-    成果：减少40%人工干预，测试效率提升50%，生产bug减少65%，发布周期缩短30%。
+    成果：减少90%人工干预，全量测试频率从每周一次提升至每小时一次，缺陷密度减少65%，发布周期缩短一半。
+    测试覆盖率达99%以上，为团队能更加放心大胆的进行代码重构。
     <br />`,
   },
   {
@@ -60,7 +62,7 @@ const projects = [
     <br />
     4. 主导空投活动后端设计与落地，开发精准的用户质押计算逻辑，实现0计算误差。
     <br />
-    成果：成功上线5+个永续掉期交易市场，支撑2万+日活用户，系统可用性达99.99%，数据查询延迟降低40%。
+    成果：成功上线去中心化交易市场，支撑2万+日活用户，交易撮合与查询延迟降低40%。
     <br />`,
   },
   {
@@ -119,7 +121,7 @@ const works = [
       <li>搭建移动端App的TDD体系及自测试能力；
       全量自动化测试阶段监控质量/性能/稳定性指标；
       通过Jenkins & CI/CD流水线优化测试流程，保障交付质量。</li>
-      <li>统筹并落地代码整洁度（Clean Code）规范及编码最佳实践。</li>`,
+      <li>统筹并通过自动化工具落地代码整洁度（Clean Code）规范。</li>`,
   },
   {
     cls: 'Bybit',
@@ -138,7 +140,7 @@ const works = [
   {
     cls: 'Intel',
     title: '后端开发工程师',
-    time: '2018/1 ~ 2022/5',
+    time: '2019/1 ~ 2022/5',
     affiliated: 'http://img07.51jobcdn.com/fansImg/CompLogo/2/1999/1998540/1998540_300.jpg',
     description: `
       <li>维护基于安卓云服务器的协调器系统，保障高可用运行。</li>
@@ -199,13 +201,13 @@ $(document).ready(() => {
         `</td></tr>` +
         (j.affiliated
           ? `<tr>
-          <td valign="top" class="tb keys"> Affiliated:</td>
+          <td valign="top" class="tb keys"> 所属:</td>
           <td valign="top" colspan="3" class="txt1">` +
             j.affiliated +
             `</td></tr>`
           : '') +
         `<tr>
-        <td valign="top" class="tb1 keys">Description:</td>
+        <td valign="top" class="tb1 keys"></td>
         <td valign="top" colspan="3" class="txt1">` +
         j.description +
         `</td>
@@ -255,7 +257,7 @@ $(document).ready(() => {
                     <table cellspacing="0" cellpadding="0" border="0">
                       <tbody>
                         <tr>
-                          <td valign="top" class="keys">Description:</td>
+                          <td valign="top" class="keys"></td>
                           <td valign="top" class="txt1">
                           ` +
         j.description +
