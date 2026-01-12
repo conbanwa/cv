@@ -33,7 +33,7 @@ const projects = [
       actions: [
         'Designed and built a comprehensive TDD system for mobile App, including self-test module development and full-version automated testing pipeline construction;',
         'Monitored core metrics (quality, performance, stability) throughout the automated testing phase to ensure compliance with delivery standards;',
-        'Leveraged Jenkins and CI/CD pipelines to streamline testing workflows, integrating automated security scans and performance tests;',
+        'Leveraged Github Actions and CI/CD pipelines to streamline testing workflows, integrating automated security scans and performance tests;',
         'Optimized test case design to cover edge scenarios, reducing production bugs by targeting root causes in the development phase.',
       ],
       result:
@@ -111,7 +111,7 @@ const works = [
       bullets: [
         'Researched software technology strategies for cross-product line platforms, leading industry-aligned development direction and preemptive planning for technical challenges.',
         'Spearheaded cross-product software architecture design and core code implementation; Conducted research on key technologies (algorithms, databases) to resolve enterprise-level technical bottlenecks.',
-        'Established TDD system and self-test capabilities for mobile Apps; Monitored quality/performance/stability metrics during full-scale automated testing; Optimized testing workflows via Jenkins & CI/CD pipelines to ensure delivery quality.',
+        'Established TDD system and self-test capabilities for mobile Apps; Monitored quality/performance/stability metrics during full-scale automated testing; Optimized testing workflows via Github Actions & CI/CD pipelines to ensure delivery quality.',
         'Planned and implemented Clean Code standards and coding best practices across teams.',
       ],
     },
