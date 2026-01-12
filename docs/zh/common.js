@@ -89,7 +89,7 @@ const projects = [
 const works = [
   {
     cls: 'Huawei',
-    title: 'Open Harmony高级开发工程师',
+    title: 'Open Harmony高级开发工程师(OD)',
     time: '2023/4 ~ 至今',
     affiliated: 'https://pic1.zhimg.com/v2-e4d64b5e553899079c856727e6f12eae_xll.jpg',
     description: `
