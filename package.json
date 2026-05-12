@@ -6,6 +6,9 @@
     "directories": {
       "doc": "docs"
     },
+    "paths": {
+      "dirs": ["docs", "docs/zh"]
+    },
     "scripts": {
       "test": "jest --ci"
     },

@@ -9,21 +9,12 @@ if (typeof global.TextEncoder === 'undefined') {
   global.TextDecoder = TextDecoder;
 }
 
-const fs = require('fs');
 const path = require('path');
 const { executeHtmlAndCollectLogs } = require('../dist/js/util/html-js-executor.js');
+const { getAllHtmlFiles } = require('../dist/js/util/paths.js');
 
-// 获取所有 HTML 文件
-function getAllHtmlFiles() {
-  const rootDir = path.join(__dirname, '..');
-  const files = fs.readdirSync(rootDir+'/docs');
-  return files
-    .filter(file => file.endsWith('.html'))
-    .map(file => `/docs/${file}`)
-    .sort();
-}
-
-const htmlFiles = getAllHtmlFiles();
+const rootDir = path.join(__dirname, '..');
+const htmlFiles = getAllHtmlFiles(rootDir);
 
 describe('executeHtmlAndCollectLogs - All HTML pages (Enhanced Diagnostics)', () => {
   test('should find HTML files', () => {
