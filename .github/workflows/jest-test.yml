@@ -1,0 +1,25 @@
+name: Jest Unit Tests
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install --save-dev jest@29.7.0 jest-environment-jsdom@29.7.0
+
+      - name: Run Jest tests
+        run: npx jest --ci --coverage
