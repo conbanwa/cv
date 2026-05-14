@@ -35,7 +35,13 @@ const loadIframeSources = (htmlSource) => {
   const document = dom.window.document
   return iframeKeys.reduce((result, key) => {
     const iframe = document.querySelector(`iframe.${key}`)
-    result[key] = iframe ? iframe.getAttribute('src') : null
+    if (!iframe) {
+      result[key] = null
+      return result
+    }
+
+    const src = iframe.getAttribute('src')
+    result[key] = src || `${key}.html`
     return result
   }, {})
 }
