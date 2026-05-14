@@ -173,8 +173,31 @@ const works = [
 $(document).ready(() => {
   let ifrs = ['personal', 'open', 'education']
   let ifrHeights = [1390, 1560, 870]
+
+  const normalizeIframeHeight = (height) => {
+    const parsed = parseInt(height, 10)
+    return Number.isNaN(parsed) ? 0 : parsed
+  }
+
+  const getIframePageHeight = (iframe) => {
+    const doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document)
+    if (!doc) return 0
+
+    const values = [
+      doc.documentElement && doc.documentElement.scrollHeight,
+      doc.body && doc.body.scrollHeight,
+      doc.documentElement && doc.documentElement.offsetHeight,
+      doc.body && doc.body.offsetHeight,
+      doc.documentElement && doc.documentElement.clientHeight,
+      doc.body && doc.body.clientHeight,
+    ].filter((value) => typeof value === 'number' && value > 0)
+
+    return values.length ? Math.max(...values) : 0
+  }
+
   ifrs.forEach((ifr, i) => {
-    $('iframe.' + ifr).attr({
+    const $iframe = $('iframe.' + ifr)
+    $iframe.attr({
       align: 'center',
       width: '100%',
       scrolling: 'no',
@@ -183,9 +206,20 @@ $(document).ready(() => {
       marginwidth: '0',
       marginheight: '0',
     })
-    $('iframe.' + ifr).attr('src', ifr + '.html')
-    $('iframe.' + ifr).attr('height', ifrHeights[i])
+    $iframe.attr('src', ifr + '.html')
+    $iframe.attr('height', ifrHeights[i])
+    $iframe.on('load', function() {
+      const iframeHeight = normalizeIframeHeight($(this).attr('height'))
+      const pageHeight = getIframePageHeight(this)
+      const minHeight = Math.min(iframeHeight || 0, pageHeight || 0)
+      console.log(`[iframe-height] ${ifr}.html: iframe=${iframeHeight}, page=${pageHeight}, min=${minHeight}`)
+
+      if (pageHeight > iframeHeight) {
+        $(this).attr('height', pageHeight)
+      }
+    })
   })
+
   projects.forEach((j) => {
     // build description HTML from object or string
     let descHtml = ''
