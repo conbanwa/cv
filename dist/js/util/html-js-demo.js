@@ -168,7 +168,7 @@ test('my HTML page executes without errors', async () => {
  */
 async function runAllExamples() {
   console.log('HTML JS Executor - 使用示例\n');
-  console.log('=' .repeat(60));
+  console.log('='.repeat(60));
 
   try {
     // 注意：部分示例需要存在相应的 HTML 文件
@@ -185,7 +185,7 @@ async function runAllExamples() {
     console.error('\n执行示例时出错：', error.message);
   }
 
-  console.log('\n' + '='.repeat(60));
+  console.log(`\n${'='.repeat(60)}`);
   console.log('所有示例执行完成');
 }
 

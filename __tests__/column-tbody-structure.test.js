@@ -6,8 +6,8 @@
  */
 
 const assert = require('assert');
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const { getAllHtmlFiles } = require('../dist/js/util/paths.js');
 
 const rootDir = path.join(__dirname, '..');

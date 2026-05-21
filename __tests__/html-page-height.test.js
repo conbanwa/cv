@@ -3,8 +3,8 @@
  * ifrHeights 至少为 [1390, 1560, 870] 和 [970, 1275, 870]
  * 主要特点：详细的错误报告，脚本追踪，
  */
-const fs = require('fs')
-const path = require('path')
+const fs = require('node:fs')
+const path = require('node:path')
 const { JSDOM } = require('jsdom')
 
 const iframeKeys = ['personal', 'open', 'education']

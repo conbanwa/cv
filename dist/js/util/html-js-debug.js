@@ -58,7 +58,7 @@ async function diagnoseHtml(htmlPath) {
         }
       });
       
-      console.log('\n' + '─'.repeat(70));
+          console.log(`\n${'─'.repeat(70)}`);
       console.log('💡 提示: 查看上面堆栈中的行号，找到实际出错的代码位置');
       console.log('─'.repeat(70));
     } else {
@@ -69,7 +69,7 @@ async function diagnoseHtml(htmlPath) {
     const otherLogs = logs.filter(l => l.level !== 'error');
     if (otherLogs.length > 0 && otherLogs.length <= 10) {
       console.log('\n其他日志:');
-      otherLogs.forEach((log, idx) => {
+      otherLogs.forEach((log, _idx) => {
         console.log(`  [${log.level}] ${log.message}`);
       });
     } else if (otherLogs.length > 10) {
@@ -118,9 +118,9 @@ async function main() {
     await diagnoseHtml(htmlPath);
   }
 
-  console.log('\n' + '═'.repeat(70));
+  console.log(`\n${'═'.repeat(70)}`);
   console.log('诊断完成');
-  console.log('═'.repeat(70) + '\n');
+  console.log(`${'═'.repeat(70)}\n`);
 }
 
 if (require.main === module) {

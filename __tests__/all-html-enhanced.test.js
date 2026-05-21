@@ -4,12 +4,12 @@
  */
 
 if (typeof global.TextEncoder === 'undefined') {
-  const { TextEncoder, TextDecoder } = require('util');
+  const { TextEncoder, TextDecoder } = require('node:util');
   global.TextEncoder = TextEncoder;
   global.TextDecoder = TextDecoder;
 }
 
-const path = require('path');
+const path = require('node:path');
 const { executeHtmlAndCollectLogs } = require('../dist/js/util/html-js-executor.js');
 const { getAllHtmlFiles } = require('../dist/js/util/paths.js');
 
