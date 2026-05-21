@@ -93,13 +93,13 @@ const projects = [
         'Built a Gin + MySQL-based CMS for enterprise resource visualization, supporting real-time data monitoring and decision-making;',
         'Developed core ERP modules including BOM management, production control, order processing, and role-based access control;',
         'Optimized database structure to handle 1M+ daily data entries, reducing query time by 50%;',
-        "Integrated front-end and back-end systems using Vue.js and Node.js, improving system response speed by 30%.",
+        'Integrated front-end and back-end systems using Vue.js and Node.js, improving system response speed by 30%.',
       ],
       result:
         'Improved enterprise operational efficiency by 40%, reduced manual data entry errors by 80%, unified data management across 5+ departments, and supported 500+ concurrent users.',
     },
   },
-];
+]
 const works = [
   {
     cls: 'Huawei',
@@ -120,7 +120,8 @@ const works = [
     cls: 'Bybit',
     title: 'Back-End Developer',
     time: '2022/6 ~ 2023/3',
-    affiliated: 'http://jfz-erp2.oss-cn-hangzhou.aliyuncs.com/images/dc_upload/a1XE4Zom1pbNOZ4LZ1eKVodAbagpmI1mmMAWhu3K.png',
+    affiliated:
+      'http://jfz-erp2.oss-cn-hangzhou.aliyuncs.com/images/dc_upload/a1XE4Zom1pbNOZ4LZ1eKVodAbagpmI1mmMAWhu3K.png',
     description: {
       lead: 'Designed and developed full-stack systems (front-end + back-end) for DeFi products.',
       bullets: [
@@ -149,7 +150,8 @@ const works = [
     cls: 'ACCU',
     title: 'Back-End Developer',
     time: '2015/7 ~ 2017/12',
-    affiliated: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.3JfCz-BhoNINfTobcRg2vgAAAA?w=150&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7',
+    affiliated:
+      'https://tse2-mm.cn.bing.net/th/id/OIP-C.3JfCz-BhoNINfTobcRg2vgAAAA?w=150&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7',
     description: {
       lead: 'ACCU provides end-to-end quality management solutions for automotive/electronics manufacturing supply chains (clients: Mercedes-Benz, BMW, Volkswagen).',
       bullets: [
@@ -164,12 +166,13 @@ const works = [
     cls: 'Rolls-Royce',
     title: 'Intern Engineer',
     time: '2014/9 ~ 2014/10',
-    affiliated: 'https://www.bing.com/th?id=OSK.by68J9786kXt3Rf2wwSHYuyJB8Aa5EajCKHT-3O4lQk&w=102&h=102&c=7&o=6&pid=SANGAM',
+    affiliated:
+      'https://www.bing.com/th?id=OSK.by68J9786kXt3Rf2wwSHYuyJB8Aa5EajCKHT-3O4lQk&w=102&h=102&c=7&o=6&pid=SANGAM',
     description: {
       lead: 'Verified production line product measurement data to ensure compliance with Rolls-Royce quality standards, supporting high-precision manufacturing processes.',
     },
   },
-];
+]
 $(document).ready(() => {
   let ifrs = ['personal', 'open', 'education']
   let ifrHeights = [1390, 1560, 870]
@@ -208,7 +211,7 @@ $(document).ready(() => {
     })
     $iframe.attr('src', ifr + '.html')
     $iframe.attr('height', ifrHeights[i])
-    $iframe.on('load', function() {
+    $iframe.on('load', function () {
       const iframeHeight = normalizeIframeHeight($(this).attr('height'))
       const pageHeight = getIframePageHeight(this)
       const minHeight = Math.min(iframeHeight || 0, pageHeight || 0)

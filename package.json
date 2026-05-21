@@ -1,23 +1,25 @@
 {
-    "name": "cv",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "directories": {
-      "doc": "docs"
-    },
-    "paths": {
-      "dirs": ["docs", "docs/zh"]
-    },
-    "scripts": {
-      "test": "jest --ci"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-      "jest": "29.7.0",
-      "jest-environment-jsdom": "29.7.0",
-      "jsdom": "^22.1.0"
-    }
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "paths": {
+    "dirs": [
+      "docs",
+      "docs/zh"
+    ]
+  },
+  "scripts": {
+    "test": "jest --ci"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "jsdom": "^22.1.0"
   }
-  
+}
