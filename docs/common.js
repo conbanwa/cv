@@ -31,13 +31,34 @@ const projects = [
       tasks:
         'Build a Test-Driven Development (TDD) system and automated testing pipeline to improve test efficiency and product stability.',
       actions: [
-        'Designed and built a comprehensive TDD system for mobile App, including self-test module development and full-version automated testing pipeline construction;',
-        'Monitored core metrics (quality, performance, stability) throughout the automated testing phase to ensure compliance with delivery standards;',
-        'Leveraged Github Actions and CI/CD pipelines to streamline testing workflows, integrating automated security scans and performance tests;',
-        'Optimized test case design to cover edge scenarios, reducing production bugs by targeting root causes in the development phase.',
+        'Designed and built a comprehensive TDD system for HarmonyOS mobile App, including self-test modules and automated pipelines for ArkTS/ArkUI code;',
+        /* 精准注入：排列组合测试，提升充分度并缩短开发时长 */
+        'Utilized combinatorial and pairwise testing matrices to thoroughly execute diverse parameter permutations, significantly maximizing test adequacy while cutting down overall development and debugging cycles;',
+        'Leveraged Github Actions and CI/CD pipelines to streamline HarmonyOS build/test workflows, integrating security scans and performance checks;',
+        /* 精准注入：边界条件、状态Mock、时间旅行测试闹钟 */
+        'Engineered robust state-mocking capabilities to validate complex boundary conditions, implementing time-travel testing (e.g., injection of future timestamps) to thoroughly verify time-sensitive components like alarms.',
       ],
       result:
         'Reduced manual intervention by 90%, increased full-test frequency from once a week to once an hour, reduced defect density by 65%, and shortened release cycle by half. Test coverage exceeded 99%, enabling the team to refactor code more confidently.',
+    },
+  },
+  {
+    cls: 'inclinometer',
+    title: 'Inclinometer Calibration System',
+    time: '2024/7 ~ 2024/8',
+    affiliated: 'Huawei',
+    description: {
+      situation:
+        'The original inclinometer relied on gravity sensing and produced tilt errors during acceleration, causing measurement failure and severely degrading dynamic attitude estimation accuracy.',
+      actions: [
+        'Formulated a rigid-body kinematic model to decouple true gravity from dynamic inertial noise, isolating centripetal ω × (ω × r) and tangential α × r accelerations during rapid rotation.',
+        'Implemented a delayed-state magnetometer calibration loop coupled with a complementary filter to bound long-term heading drift without inducing phase lag.',
+        'Developed a real-time kinematic state machine to dynamically toggle HarmonyOS sensor sampling rates (50Hz ↔ 200Hz) and algorithm complexity based on acceleration variance.',
+        'Optimized the tracking architecture by replacing a high-overhead double-integration loop with a first-order gyroscope integration (∫ω dt) for steady states, eliminating derivative noise amplification.',
+        'Ported core fusion algorithms to HarmonyOS Native C++ (NDK), directly subscribing to the low-level HarmonyOS Sensor Service to bypass NAPI serialization bottlenecks for high-frequency IMU data streams.',
+      ],
+      result:
+        'Achieved sub-degree attitude accuracy under both static and high-dynamic scenarios; successfully slashed CPU compute overhead and power consumption on HarmonyOS devices, eliminating thermal throttling.',
     },
   },
   {
@@ -107,12 +128,27 @@ const works = [
     time: '2023/4 ~ Present',
     affiliated: 'https://pic1.zhimg.com/v2-e4d64b5e553899079c856727e6f12eae_xll.jpg',
     description: {
-      lead: 'Designed and developed core features for Open Harmony Next mobile applications.',
+      lead: 'Worked in Huawei media department on Open Harmony Next mobile application development, focusing on ArkTS/ArkWeb/ArkUI and enterprise-grade mobile delivery.',
       bullets: [
-        'Researched software technology strategies for cross-product line platforms, leading industry-aligned development direction and preemptive planning for technical challenges.',
-        'Spearheaded cross-product software architecture design and core code implementation; Conducted research on key technologies (algorithms, databases) to resolve enterprise-level technical bottlenecks.',
-        'Established TDD system and self-test capabilities for mobile Apps; Monitored quality/performance/stability metrics during full-scale automated testing; Optimized testing workflows via Github Actions & CI/CD pipelines to ensure delivery quality.',
-        'Planned and implemented Clean Code standards and coding best practices across teams.',
+        'Built HarmonyOS applications and components using ArkTS/TypeScript, ArkWeb, and ArkUI declarative UI, aligned with microkernel architecture and mobile engineering best practices.',
+        'Integrated mobile apps with backend services and cloud APIs, ensuring secure data flow, reliable performance, and cross-device compatibility across HarmonyOS devices.',
+        'Led mobile engineering quality governance: clean architecture, unit tests, peer code reviews, branch strategy, and release readiness checks for regulated delivery.',
+        'Resolved device and OS version issues, optimized startup, rendering, memory usage, and stability for production HarmonyOS deployments.',
+      ],
+    },
+  },
+  {
+    cls: 'Career',
+    title: 'Open Harmony Senior Developer',
+    time: '2023/4 ~ Present',
+    affiliated: 'https://pic1.zhimg.com/v2-e4d64b5e553899079c856727e6f12eae_xll.jpg',
+    description: {
+      lead: 'Worked with Huawei media department on Open Harmony Next mobile application development, focusing on ArkTS/ArkWeb/ArkUI and enterprise-grade mobile delivery.',
+      bullets: [
+        'Built HarmonyOS applications and components using ArkTS/TypeScript, ArkWeb, and ArkUI declarative UI, aligned with ArkTS architecture and mobile engineering best practices.',
+        'Integrated mobile apps with backend services and cloud APIs, ensuring secure data flow, reliable performance, and cross-device compatibility across HarmonyOS devices.',
+        'Led mobile engineering quality governance: clean architecture, unit tests, peer code reviews, branch strategy, and release readiness checks for regulated delivery.',
+        'Resolved device and OS version issues, optimized startup, rendering, memory usage, and stability for production HarmonyOS deployments.',
       ],
     },
   },

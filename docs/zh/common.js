@@ -7,7 +7,7 @@ const projects = [
     time: '2024/1 ~ 2024/4',
     affiliated: '跨项目专项',
     description: {
-      background:
+      situation:
         '多团队维护的高频迭代项目安全风险频发（外部输入漏洞、内存泄漏等），代码质量参差不齐，导致产品性能、可靠性下降30%。',
       actions: [
         '搭建全维度代码质量治理体系，实现安全校验自动化、代码提交规范化，最小化维护过程中的副作用。',
@@ -21,20 +21,41 @@ const projects = [
   },
   {
     cls: 'tdd',
-    title: '移动端App的TDD框架与自动化测试体系',
+    title: '移动端App TDD框架与自动化测试体系',
     time: '2025/1 ~ 2025/6',
-    affiliated: '华为',
+    affiliated: 'Huawei',
     description: {
-      background: 'Open Harmony Next移动端App快速迭代过程中测试效率低、质量不稳定，25%的bug仅在生产环境被发现。',
+      situation:
+        'Open Harmony Next 移动应用在快速迭代中面临测试效率低和质量不稳定的问题，25% 的 Bug 流到了生产环境中被发现。',
+      tasks: '构建测试驱动开发 (TDD) 系统和自动化测试流水线，以提高测试效率和产品稳定性。',
       actions: [
-        '搭建测试驱动开发（TDD）体系与自动化测试流水线，提升测试效率与产品稳定性。',
-        '为移动端App设计并搭建完整的TDD体系，涵盖自测试模块开发及全版本自动化测试流水线构建；',
-        '在自动化测试阶段全程监控质量、性能、稳定性核心指标，确保交付标准落地；',
-        '基于Github Actions和CI/CD流水线优化测试流程，集成自动化安全扫描与性能测试；',
-        '优化测试用例设计，覆盖边缘场景，从开发阶段定位根因减少生产bug。',
+        '为 HarmonyOS 移动应用设计并构建了全面的 TDD 系统，包括针对 ArkTS/ArkUI 代码的自测模块和自动化流水线；',
+        /* 精准注入：排列组合测试，提升充分度并缩短开发时长 */
+        '引入正交排列组合等测试矩阵，充分覆盖不同参数与配置的交叉组合，在极大提升测试充分度的同时缩短了整体开发与调试时长；',
+        '利用 Github Actions 和 CI/CD 流水线简化 HarmonyOS 构建/测试工作流，集成了安全扫描和性能检查；',
+        /* 精准注入：边界条件、状态Mock、时间旅行测试闹钟 */
+        '构建了强大的状态 Mock 机制以完整覆盖各种极端的边界条件，实现**时间旅行（Time-Travel）测试**（如 Mock 未来时间戳）来充分验证闹钟等时间敏感型核心组件。',
       ],
       result:
         '减少90%人工干预，全量测试频率从每周一次提升至每小时一次，缺陷密度减少65%，发布周期缩短一半。测试覆盖率达99%以上，为团队能更加放心大胆的进行代码重构。',
+    },
+  },
+  {
+    cls: 'inclinometer',
+    title: '水平仪动态校准系统',
+    time: '2024/7 ~ 2024/8',
+    affiliated: 'Huawei',
+    description: {
+      situation: '原水平仪依赖重力感应，在动态加速度状态下会出现倾斜失效问题，严重影响移动端设备姿态估计的准确性。',
+      actions: [
+        '构建刚体运动学模型以将真实重力与动态惯性噪声解耦，准确隔离快速旋转过程中的向心加速度 ω × (ω × r) 和切向加速度 α × r。',
+        '实现延迟状态磁力计校准回路并结合互补滤波器，在强力抑制长期航向漂移的同时，避免在瞬态磁异常期间引入相位滞后。',
+        '开发实时运动状态机，根据加速度方差动态切换鸿蒙传感器的采样频率（50Hz ↔ 200Hz）和算法复杂度，从策略层遏制电池消耗。',
+        '优化姿态追踪架构，在准静态下将高开销的双重积分循环替换为陀螺仪一阶积分 (∫ω dt)，从根本上解决微分带来的噪声放大问题。',
+        '将核心融合算法下沉至鸿蒙 Native C++ (NDK) 层，直接订阅底层 HarmonyOS Sensor Service，绕过高频 IMU 数据流的 NAPI 序列化性能瓶颈。',
+      ],
+      result:
+        '在静态和高动态场景下均实现了亚度（Sub-degree）级的姿态估计精度；成功大幅降低了鸿蒙设备上的 CPU 计算开销与功耗，彻底消除了长时间校准任务中的发热降频现象。',
     },
   },
   {
@@ -43,7 +64,7 @@ const projects = [
     time: '2022/8 ~ 2022/11',
     affiliated: 'Bybit',
     description: {
-      background:
+      situation:
         '现有中心化衍生品交易所存在扩展性不足、安全风险高等问题，需搭建去中心化非托管解决方案，支持任意代币对的永续掉期交易市场。',
       actions: [
         '开发去中心化衍生品交易所高性能后端系统，保障交易处理的精准性与稳定性。',
@@ -61,7 +82,7 @@ const projects = [
     time: '2022/6 ~ 2022/11',
     affiliated: 'Bybit',
     description: {
-      background: 'DeFi平台用户参与度低，需搭建交易挖矿机制提升用户持仓量与平台流动性。',
+      situation: 'DeFi平台用户参与度低，需搭建交易挖矿机制提升用户持仓量与平台流动性。',
       actions: [
         '设计并实现交易挖矿活动后端，优化奖励计算逻辑提升活动效果。',
         '设计并实现交易挖矿活动后端，提升用户持仓量参与率；',
@@ -77,7 +98,7 @@ const projects = [
     title: '企业级CMS与ERP平台',
     time: '2016/9 ~ 2017/9',
     description: {
-      background: '企业管理层缺乏资源可视化管理工具，导致运营效率低，各部门数据碎片化。',
+      situation: '企业管理层缺乏资源可视化管理工具，导致运营效率低，各部门数据碎片化。',
       actions: [
         '搭建全维度CMS & ERP平台，实现企业资源可视化与业务流程标准化。',
         '基于Gin+MySQL构建企业资源可视化CMS系统，支持实时数据监控与决策分析；',
@@ -96,14 +117,11 @@ const works = [
     time: '2023/4 ~ 至今',
     affiliated: 'https://pic1.zhimg.com/v2-e4d64b5e553899079c856727e6f12eae_xll.jpg',
     description: `
-      <li>负责Open Harmony Next移动端应用核心功能的设计与开发。</li>
-      <li>研究跨产品线平台的软件技术策略，主导符合行业趋势的开发方向规划，提前布局技术挑战应对方案。</li>
-      <li>牵头跨产品软件架构设计与核心代码实现；
-      针对算法、数据库等关键技术开展专项研究，解决企业级技术瓶颈问题。</li>
-      <li>搭建移动端App的TDD体系及自测试能力；
-      全量自动化测试阶段监控质量/性能/稳定性指标；
-      通过Github Actions & CI/CD流水线优化测试流程，保障交付质量。</li>
-      <li>统筹并通过自动化工具落地代码整洁度（Clean Code）规范。</li>`,
+      <li>在华为科智锐部负责媒体（媒资）方向 Open Harmony Next 移动应用开发，聚焦 ArkTS/ArkWeb/ArkUI 生态。</li>
+      <li>负责 HarmonyOS 移动应用核心功能的设计与开发，结合微内核架构和移动工程最佳实践。</li>
+      <li>设计并实现 ArkTS/TypeScript、ArkWeb、ArkUI 声明式 UI 部件，与后端服务和云 API 深度集成，保障安全、性能和跨设备一致性。</li>
+      <li>搭建移动端 App 的 TDD 体系与自测试能力；全量自动化测试阶段监控质量/性能/稳定性指标；通过 Github Actions 与 CI/CD 流水线优化测试流程，保障交付质量。</li>
+      <li>推动清洁代码规范、分支策略与发布准备检查落地，解决设备/OS 版本兼容问题，提升 HarmonyOS 生产环境稳定性。</li>`,
   },
   {
     cls: 'Bybit',
@@ -227,7 +245,7 @@ $(document).ready(() => {
           : '') +
         `<tr>
         <td valign="top" colspan="3" class="txt1">
-          <div class="project-bg"><strong>背景：</strong>${j.description.background}</div>
+          <div class="project-bg"><strong>背景：</strong>${j.description.situation}</div>
           <div class="project-duty"><strong>职责：</strong>
             <ul style="margin:0 0 0 1.5em;padding:0;">
               ${j.description.actions.map((d) => `<li>${d}</li>`).join('')}
