@@ -183,6 +183,32 @@ const works = [
     },
   },
   {
+    cls: 'Hyeco',
+    title: 'Full Stack Engineer',
+    time: '2021/2 ~ 2021/12',
+    affiliated: 'https://media.licdn.com/dms/image/v2/C4E0BAQEpiPiXLqi9Rw/company-logo_200_200/company-logo_200_200/0/1631311837863?e=2147483647&v=beta&t=rngfG1Hw6GJ34ht2J72BhzbdI3fkka5ciT7WbI-XAKc',
+    description: `
+      <li>Corely responsible for designing, implementing, and maintaining the B-side IoT (Internet of Things) device management platform.</li>
+      <li>Collaborated closely with designers, clients, and backend developers to realize product user interfaces, interaction flows, and core features end-to-end.</li>
+      <li>Continuously optimized front-end user experience and page response speed, while heavily tuning backend server-side code execution and high-frequency IoT data processing efficiency.</li>
+      <li>Developed, expanded, and maintained reusable front-end component libraries and high-performance backend API services.</li>
+      <li>Led cross-team communication and department coordination to ensure smooth and efficient delivery of responsible business modules.</li>
+      <li><strong>Technical Stack:</strong> Golang, Gin, Beego, MySQL, Vue, Ant Design, JavaScript, HTML, CSS</li>
+    `,
+  },
+  {
+    cls: 'Wood',
+    title: 'Go Development Engineer',
+    time: '2017/12 ~ 2021/2',
+    affiliated: 'https://bkimg.cdn.bcebos.com/pic/3bf33a87e950352ad7e150e15d43fbf2b3118b52?x-bce-process=image/format,f_auto/resize,m_lfit,limit_1,w_335',
+    description: `
+      <li>Aligned with the company's product development directions, corely responsible for the architectural design, coding, and development of WEB servers.</li>
+      <li>Actively participated in requirement design, technical review, architecture discussion, and led full backend code refactoring and optimization.</li>
+      <li>Executed high-quality unit testing to ensure delivery readiness, and troubleshot critical production environment issues, bug fixes, and performance bottlenecks in high-concurrency scenarios.</li>
+      <li><strong>Technical Stack:</strong> Go, Gin, Python, MySQL, Vue, Bootstrap</li>
+    `,
+  },
+  {
     cls: 'ACCU',
     title: 'Back-End Developer',
     time: '2015/7 ~ 2017/12',

@@ -116,12 +116,15 @@ const works = [
     title: 'Open Harmony高级开发工程师(OD)',
     time: '2023/4 ~ 至今',
     affiliated: 'https://pic1.zhimg.com/v2-e4d64b5e553899079c856727e6f12eae_xll.jpg',
-    description: `
-      <li>在华为科智锐部负责媒体（媒资）方向 Open Harmony Next 移动应用开发，聚焦 ArkTS/ArkWeb/ArkUI 生态。</li>
-      <li>负责 HarmonyOS 移动应用核心功能的设计与开发，结合微内核架构和移动工程最佳实践。</li>
-      <li>设计并实现 ArkTS/TypeScript、ArkWeb、ArkUI 声明式 UI 部件，与后端服务和云 API 深度集成，保障安全、性能和跨设备一致性。</li>
-      <li>搭建移动端 App 的 TDD 体系与自测试能力；全量自动化测试阶段监控质量/性能/稳定性指标；通过 Github Actions 与 CI/CD 流水线优化测试流程，保障交付质量。</li>
-      <li>推动清洁代码规范、分支策略与发布准备检查落地，解决设备/OS 版本兼容问题，提升 HarmonyOS 生产环境稳定性。</li>`,
+    description: {
+      lead: '在华为科智锐部负责媒体（媒资）方向 Open Harmony Next 移动应用开发，聚焦 ArkTS/ArkWeb/ArkUI 生态。',
+      bullets: [
+        '负责 HarmonyOS 移动应用核心功能的设计与开发，结合微内核架构和移动工程最佳实践。',
+        '设计并实现 ArkTS/TypeScript、ArkWeb、ArkUI 声明式 UI 部件，与后端服务和云 API 深度集成，保障安全、性能和跨设备一致性。',
+        '搭建移动端 App 的 TDD 体系与自测试能力；全量自动化测试阶段监控质量/性能/稳定性指标；通过 Github Actions 与 CI/CD 流水线优化测试流程，保障交付质量。',
+        '推动清洁代码规范、分支策略与发布准备检查落地，解决设备/OS 版本兼容问题，提升 HarmonyOS 生产环境稳定性。',
+      ],
+    },
   },
   {
     cls: 'Bybit',
@@ -129,26 +132,29 @@ const works = [
     time: '2022/6 ~ 2023/3',
     affiliated:
       'http://jfz-erp2.oss-cn-hangzhou.aliyuncs.com/images/dc_upload/a1XE4Zom1pbNOZ4LZ1eKVodAbagpmI1mmMAWhu3K.png',
-    description: `
-      <li>负责DeFi产品全栈系统（前端+后端）的设计与开发。</li>
-      <li>维护、升级并优化系统，解决高并发、稳定性及海量数据场景下的技术难题。</li>
-      <li>参与业务重构研讨，提出可行的技术解决方案，
-      独立撰写技术文档。</li>
-      <li>构建基于Go语言的核心框架，对接链上智能合约，
-      采用Redis和MySQL管理活动数据。</li>
-      <li>研究去中心化技术，优化后端服务器性能。</li>`,
+    description: {
+      lead: '负责 DeFi 产品全栈系统（前端+后端）的设计与开发。',
+      bullets: [
+        '维护、升级并优化系统，解决高并发、稳定性及海量数据场景下的技术难题。',
+        '参与业务重构研讨，提出可行的技术解决方案，独立撰写技术文档。',
+        '构建基于 Go 语言的核心框架，对接链上智能合约，采用 Redis 和 MySQL 管理活动数据。',
+        '研究去中心化技术，优化后端服务器性能。',
+      ],
+    },
   },
   {
     cls: 'Intel',
     title: '后端开发工程师',
     time: '2019/1 ~ 2022/5',
     affiliated: 'http://img07.51jobcdn.com/fansImg/CompLogo/2/1999/1998540/1998540_300.jpg',
-    description: `
-      <li>维护基于安卓云服务器的协调器系统，保障高可用运行。</li>
-      <li>主导日活10万+用户管理平台的开发与维护。</li>
-      <li>统筹数据库维护、优化及容灾方案规划。</li>
-      <li>主导业务产品落地与技术调研；
-      制定开发计划并维护技术文档。</li>`,
+    description: {
+      lead: '维护基于安卓云服务器的协调器系统，保障高可用运行。',
+      bullets: [
+        '主导日活10万+用户管理平台的开发与维护。',
+        '统筹数据库维护、优化及容灾方案规划。',
+        '主导业务产品落地与技术调研；制定开发计划并维护技术文档。',
+      ],
+    },
   },
   {
     cls: 'ACCU',
@@ -156,12 +162,45 @@ const works = [
     time: '2015/7 ~ 2017/12',
     affiliated:
       'https://tse2-mm.cn.bing.net/th/id/OIP-C.3JfCz-BhoNINfTobcRg2vgAAAA?w=150&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7',
-    description: `
-      ACCU为汽车/电子制造供应链提供端到端质量管理解决方案（客户：奔驰、宝马、大众）。
-      <li>开发面向海外汽车生产线的质检数据管理服务。</li>
-      <li>主导一线质检人员人工成本核算系统开发。</li>
-      <li>参与需求设计、后端代码重构、单元测试及生产环境问题排查。</li>
-      <li>负责多国家系统本地化部署：收集区域化需求，维护多语言包。</li>`,
+    description: {
+      lead: 'ACCU 为汽车/电子制造供应链提供端到端质量管理解决方案（客户：奔驰、宝马、大众）。',
+      bullets: [
+        '开发面向海外汽车生产线的质检数据管理服务。',
+        '主导一线质检人员人工成本核算系统开发。',
+        '参与需求设计、后端代码重构、单元测试及生产环境问题排查。',
+        '负责多国家系统本地化部署：收集区域化需求，维护多语言包。',
+      ],
+    },
+  },
+  {
+    cls: 'Hyeco',
+    title: '全栈开发工程师',
+    time: '2021/2 ~ 2021/12',
+    affiliated: 'https://media.licdn.com/dms/image/v2/C4E0BAQEpiPiXLqi9Rw/company-logo_200_200/company-logo_200_200/0/1631311837863?e=2147483647&v=beta&t=rngfG1Hw6GJ34ht2J72BhzbdI3fkka5ciT7WbI-XAKc',
+    description: {
+      lead: '核心负责公司 B 端 IoT（物联网）设备管理平台的设计、搭建与日常维护。',
+      bullets: [
+        '高效协同设计师、客户及后端开发团队，端到端实现产品界面、交互逻辑与核心业务功能。',
+        '持续优化前端交互体验与页面响应速度，同时深度调优后端服务器代码运行效率及海量 IoT 高频数据处理性能。',
+        '负责可复用前端公共组件库的开发与扩展，以及底层高性能服务层 API 的设计、研发与长效维护。',
+        '主导跨团队沟通与跨部门协作，协调并确保所负责核心业务模块的高效、平稳交付。',
+        '<strong>技术栈：</strong>Golang, Gin, Beego, MySQL, Vue, Ant Design, JavaScript, HTML, CSS',
+      ],
+    },
+  },
+  {
+    cls: 'Wood',
+    title: 'Go开发工程师',
+    time: '2017/12 ~ 2021/2',
+    affiliated: 'https://bkimg.cdn.bcebos.com/pic/3bf33a87e950352ad7e150e15d43fbf2b3118b52?x-bce-process=image/format,f_auto/resize,m_lfit,limit_1,w_335',
+    description: {
+      lead: '根据公司产品线研发方向，核心负责高性能 Web 服务端（WEB server）的架构设计、核心编码与开发工作。',
+      bullets: [
+        '深度参与产品需求设计、技术方案评审与架构讨论，主导复杂后端代码的重构升级。',
+        '负责编写高质量单元测试以保障交付质量，高效完成 Bug 修复及高并发线上生产环境下的故障紧急排查与性能修复。',
+        '<strong>技术栈：</strong>Go, Gin, Python, MySQL, Vue, Bootstrap',
+      ],
+    },
   },
   {
     cls: 'Rolls-Royce',
@@ -169,8 +208,9 @@ const works = [
     time: '2014/9 ~ 2014/10',
     affiliated:
       'https://www.bing.com/th?id=OSK.by68J9786kXt3Rf2wwSHYuyJB8Aa5EajCKHT-3O4lQk&w=102&h=102&c=7&o=6&pid=SANGAM',
-    description: `
-      验证生产线产品测量数据，确保符合劳斯莱斯质量标准，支撑高精度制造流程。`,
+    description: {
+      lead: '验证生产线产品测量数据，确保符合劳斯莱斯质量标准，支撑高精度制造流程。',
+    },
   },
 ]
 $(document).ready(() => {
@@ -260,6 +300,21 @@ $(document).ready(() => {
     )
   })
   works.forEach((j) => {
+    let descHtml = ''
+    if (typeof j.description === 'string') {
+      descHtml = j.description
+    } else if (typeof j.description === 'object' && j.description !== null) {
+      const d = j.description
+      if (d.lead) descHtml += '<p>' + d.lead + '</p>'
+      if (Array.isArray(d.bullets) && d.bullets.length) {
+        descHtml += '<ul>'
+        d.bullets.forEach((b) => {
+          descHtml += '<li>' + b + '</li>'
+        })
+        descHtml += '</ul>'
+      }
+    }
+
     $('tr.work.' + j.cls).html(
       `
         <tr>
@@ -302,7 +357,7 @@ $(document).ready(() => {
                           <td valign="top" class="keys"></td>
                           <td valign="top" class="txt1">
                           ` +
-        j.description +
+        descHtml +
         `
                           </td>
                         </tr>
